@@ -1,0 +1,10 @@
+<StackLayout class="page">
+    <Button class="button button-energized" text="energized" (tap)="test()" rel="energized">
+    </Button>
+    <ListView [items]="items" class="list-group">
+        <ng-template let-item="item">
+            <Label [nsRouterLink]="['/item', item.id]" [text]="item.name"
+                class="list-group-item"></Label>
+        </ng-template>
+    </ListView>
+</StackLayout>

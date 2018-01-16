@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\darita\.android\build-cache\ff49996d813951615f35cae189cdfcfa1fd32576\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="746274223beb11b1cda7854d7eec3038695c2c93">
+        <dex dex="C:\Users\darita\Documents\Repos\tuus-ns\tuus\platforms\android\app\build\intermediates\pre-dexed\debug\classes_c9eab54485881b92d6ffe72d2bdf2c2414c13633.jar" />
+    </item>
+
+</items>
