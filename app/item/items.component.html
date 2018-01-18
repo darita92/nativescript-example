@@ -1,10 +1,23 @@
-<StackLayout class="page">
-    <Button class="button button-energized" text="energized" (tap)="test()" rel="energized">
-    </Button>
-    <ListView [items]="items" class="list-group">
-        <ng-template let-item="item">
-            <Label [nsRouterLink]="['/item', item.id]" [text]="item.name"
-                class="list-group-item"></Label>
-        </ng-template>
-    </ListView>
-</StackLayout>
+<!-- https://docs.nativescript.org/angular/core-concepts/angular-navigation.html#page-router-outlet -->
+<ActionBar title="Example App" class="action-bar-positive">
+    <NavigationButton icon="res://menu" (tap)="toggle()"></NavigationButton>
+</ActionBar>
+
+<RadSideDrawer #drawer [transition]="sideDrawerTransition" selectionBehavior="None">
+    <StackLayout tkDrawerContent>
+        <Button text="Home" [nsRouterLink]="['/home']" nsRouterLinkActive="active" [nsRouterLinkActiveOptions]="{exact:true}"></Button>
+        <Button text="Other Page" [nsRouterLink]="['/home/otherPath']" nsRouterLinkActive="active"></Button>
+    </StackLayout>
+    <StackLayout tkMainContent>
+        <StackLayout class="page">
+            <Button class="button button-energized" text="energized" (tap)="test()" rel="energized">
+            </Button>
+            <ListView [items]="items" class="list-group">
+                <ng-template let-item="item">
+                    <Label [nsRouterLink]="['/item', item.id]" [text]="item.name"
+                        class="list-group-item"></Label>
+                </ng-template>
+            </ListView>
+        </StackLayout>
+    </StackLayout>
+</RadSideDrawer>

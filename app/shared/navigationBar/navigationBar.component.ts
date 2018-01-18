@@ -17,18 +17,15 @@ export class NavBarComponent implements AfterViewInit, OnInit {
 
     @ViewChild(RadSideDrawerComponent) public drawerComponent: RadSideDrawerComponent;
 
+
     ngAfterViewInit() {
-        if(this.drawerComponent){
-            this._drawer = this.drawerComponent.sideDrawer;
-            this._drawer.drawerLocation = SideDrawerLocation.Left;
-        }
+        this._drawer = this.drawerComponent.sideDrawer;
+        this._drawer.drawerLocation = SideDrawerLocation.Left;
     }
 
-    ngOnInit() {
-        
-    }
+    ngOnInit() {}
 
-    public showSlideout() {
-        this._drawer.showDrawer();
+    public toggle() {
+        this._drawer.toggleDrawerState();
     }
 }
