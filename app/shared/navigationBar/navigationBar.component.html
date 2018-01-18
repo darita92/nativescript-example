@@ -1,7 +1,7 @@
-<ActionBar title="Testing" class="action-bar">
+<ActionBar title="Testing" class="action-bar" (tap)="showSlideout($event)">
     <ActionItem (tap)="showSlideout($event)" ios.position="right">
-        <StackLayout class="navbar_image_wrapper" ios:horizontalAlignment="right">
-            <Image src="res://ic_menu"></Image>
+        <StackLayout class="navbar_image_wrapper" ios:horizontalAlignment="left">
+            <Image src="res://menu"></Image>
         </StackLayout>
     </ActionItem>
 </ActionBar>

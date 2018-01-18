@@ -3,3 +3,4 @@ app/*.js
 hooks
 node_modules
 platforms
+package-lock.json
