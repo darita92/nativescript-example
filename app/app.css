@@ -129,6 +129,44 @@ Page {
 }
 
 
+/* base background colors */
+
+.ionic-light-background {
+    background-color: #f8f8f8;
+}
+
+.ionic-stable-background {
+    background-color: #b2b2b2;
+}
+
+.ionic-positive-background {
+    background-color: #387ef5;
+}
+
+.ionic-calm-background {
+    background-color: #11c1f3;
+}
+
+.ionic-balanced-background {
+    background-color: #33cd5f;
+}
+
+.ionic-energized-background {
+    background-color: #ffc900;
+}
+
+.ionic-assertive-background {
+    background-color: #ef473a;
+}
+
+.ionic-royal-background {
+    background-color: #886aea;
+}
+
+.ionic-dark-background {
+    background-color: #444;
+}
+
 /* forms */
 
 .form {
@@ -608,4 +646,24 @@ Page {
 .tab-item {
     text-align: center;
     vertical-align: center;
+}
+
+.drawerContentText {
+    font-size: 13;
+    padding: 10;
+}
+
+.drawerContentButton {
+    margin: 10;
+    horizontal-align: left;
+}
+
+.sideTitleStackLayout {
+    height: 56;
+    text-align: center;
+    vertical-align: center;
+}
+
+.sideLabel {
+    padding: 10;
 }
